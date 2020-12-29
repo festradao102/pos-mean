@@ -1,0 +1,20 @@
+<form *ngIf="post" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="name">Nombre</label>
+    <input class="form-control" type="text" name="name" id="name" placeholder="Nombre" [(ngModel)]="post.name">
+  </div>
+  <div class="form-group">
+    <label for="description">Descripcion</label>
+    <textarea name="description" id="description" rows="10" class="form-control" [(ngModel)]="post.description"></textarea>
+  </div>
+  <div class="form-group">
+    <label for="imagen">Imagen</label>
+    <input type="text" name="imagen" id="imagen" class="form-control" placeholder="Imagen" [(ngModel)]="post.imagen">
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" name="available" id="available" class="form-check-input" [(ngModel)]="post.isAvailable">
+    <label for="available" class="form-check-label">Disponible</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Guardar</button>
+  <button type="button" (click)="onCancelClick()" class="btn btn-secondary">Cancelar</button>
+</form>

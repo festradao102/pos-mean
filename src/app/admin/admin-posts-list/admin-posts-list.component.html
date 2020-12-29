@@ -1,0 +1,25 @@
+<table class="table">
+  <thead>
+  <tr>
+    <th>Articulo</th>
+    <th>Descripcion</th>
+    <th>Imagen</th>
+    <th>Disponible</th>
+    <th>Fecha actualizacion</th>
+    <th>Acciones</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of postsList">
+      <td>{{post.name}}</td>
+      <td>{{post.description}}</td>
+      <td>{{post.imagen}}</td>
+      <td>{{post.isAvailable}}</td>
+      <td>{{post.date | date}}</td>
+      <td>
+        <a routerLink="/admin/post/edit/{{post._id}}" class="btn btn-primary">Editar</a>
+        <button (click)="onDeleteClick(post._id)" type="button" class="btn btn-danger">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
