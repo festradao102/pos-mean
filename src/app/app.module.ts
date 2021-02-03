@@ -13,6 +13,10 @@ import { PageTitleService } from './services/page-title.service';
 import { AdminModule } from './admin/admin.module';
 import { BaseComponent } from './components/base/base.component';
 import { PipesModule } from './pipes/pipes.module';
+import { AuthComponent } from './auth/auth.component';
+import { LoginComponent } from './auth/login/login.component';
+import { SignoutComponent } from './auth/signout/signout.component';
+import { SignupComponent } from './auth/signup/signup.component';
 
 const appRoutes: Routes = [
   {
@@ -33,6 +37,10 @@ const appRoutes: Routes = [
     BlogDescriptionComponent,
     PostDetailsComponent,
     BaseComponent,
+    AuthComponent,
+    LoginComponent,
+    SignoutComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
