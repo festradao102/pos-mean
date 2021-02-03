@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/febsdora/mean-stuff/newApp/mean-blogg/src/styles.css */"OmL/");
+module.exports = __webpack_require__(/*! /Users/Jose/CafeConWeb/WebApps/menu/pos-mean/src/styles.css */"OmL/");
 
 
 /***/ }),
